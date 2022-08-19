@@ -9,7 +9,7 @@ function Stadiums({stadiums}) {
   return (
     <div className='wrap'>
         {stadiums.map((el, i) => {
-            return <StadiumsCard stadium={el}/>
+            return <StadiumsCard key={el.tid} stadium={el}/>
         })}
     </div>
   )

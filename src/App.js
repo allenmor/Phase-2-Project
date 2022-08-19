@@ -21,7 +21,7 @@ function App() {
         setStadiums(data[0].stadiums)
       });
   }, []);
-  console.log(stadiums);
+  console.log(season);
   return (
     <>
     <NavBar />
