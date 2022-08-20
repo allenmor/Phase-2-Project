@@ -13,8 +13,11 @@ function SearchForPlayer({ players, teams }) {
   //On SEARCH CLICKED FILTER THROUGH ALL PLAYERS AND TAKE OBJECT OF PLAYER NAME SELECTED
   function handleSubmit(e) {
     e.preventDefault();
-    let searchedPlayer = players.filter((el, i) => {
-        return el.name == name
+    let newArray = players.filter((el, i) => {
+        return el.name
+    })
+    let searchedPlayer = newArray.filter((el, i) => {
+        return el.name.toLowerCase() == name
     })
 
     setNameImg({...nameImg, name: searchedPlayer[0].name, image: searchedPlayer[0].imgURL})
@@ -27,8 +30,8 @@ function SearchForPlayer({ players, teams }) {
   function handleChange(e) {
       let words = e.target.value.toLowerCase()
 
-    setName(words.split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' '))
-  }
+      setName(words)
+    }
 
 
 
