@@ -8,6 +8,7 @@ function EasternContainer({ teams, season, players }) {
   const [certainPlayers, setCertainPlayers] = useState([]);
   const [isDisplayed, setIsDisplayed] = useState(true);
 
+  // FILTER EAST AND WEST CONFERENCE
   let newArray = teams.filter((el, i) => {
     return el.cid === 0;
   });
@@ -20,6 +21,9 @@ function EasternContainer({ teams, season, players }) {
 
     setCertainPlayers(playerArray);
   }
+
+
+
  
 
 

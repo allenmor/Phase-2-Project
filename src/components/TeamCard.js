@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function TeamCard({ team, season, handleClick, playersArray, setIsDisplayed }) {
+function TeamCard({ team, handleClick, setIsDisplayed }) {
   //SEND ID TO CONFERENCE CONTAINER
   function listClick() {
     handleClick(team);
@@ -16,7 +16,7 @@ function TeamCard({ team, season, handleClick, playersArray, setIsDisplayed }) {
             <img src={team.imgURLSmall}></img>
           </td>
           <td style={{ color: `${team.colors[0]}` }} data-label="name">
-            {team.name}
+           {team.region} {team.name}
           </td>
           <td data-label="strategy">
             {team.strategy.charAt(0).toUpperCase() + team.strategy.slice(1)}

@@ -22,7 +22,7 @@ function NavBar() {
   <div className="nav-links">
     <Link to='/'>Home</Link>
     <Link to='/stadiums'>Stadiums</Link>
-    <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
+    <Link to='/searchforplayer'>Search For Player</Link>
     <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
     <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
   </div>

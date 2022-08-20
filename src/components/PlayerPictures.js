@@ -7,6 +7,7 @@ function PlayerPictures({ playerPic, setIsDisplayed, isDisplayed }) {
     setIsDisplayed();
   }
 
+
   return (
     <tbody>
       {isDisplayed ? (

@@ -4,6 +4,7 @@ import FrontPage from "./components/FrontPage";
 import Stadiums from "./components/Stadiums";
 import { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
+import SearchForPlayer from "./components/SearchForPlayer";
 
 function App() {
   const [players, setPlayers] = useState([]);
@@ -21,16 +22,20 @@ function App() {
         setStadiums(data[0].stadiums)
       });
   }, []);
-  console.log(season);
   return (
     <>
     <NavBar />
     <Routes>
+      <Route 
+      path="/searchforplayer" 
+      element={<SearchForPlayer teams={teams} players={players} />}
+      />
       <Route
         path="/"
         element={<FrontPage players={players} season={season} teams={teams} />}
       />
-      <Route path="/stadiums" element={<Stadiums stadiums={stadiums} />} />
+      <Route path="/stadiums" element={<Stadiums stadiums={stadiums} />} 
+      />
     </Routes>
     </>
   );

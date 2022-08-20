@@ -1,7 +1,7 @@
 import React from "react";
 import TeamCard from "./TeamCard";
 import PlayerPictures from "./PlayerPictures";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 function WesternContainer({ teams, players, season }) {
   const [certainPlayers, setCertainPlayers] = useState([]);
   const [isDisplayed, setIsDisplayed] = useState(true);
@@ -12,7 +12,7 @@ function WesternContainer({ teams, players, season }) {
   //PULL TEAM IDS
   function handleClick(item) {
     let playerArray = players.filter((el, i) => {
-      return el.tid == item.tid;
+      return el.tid === item.tid;
     });
 
     setCertainPlayers(playerArray);
