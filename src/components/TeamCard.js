@@ -5,7 +5,6 @@ function TeamCard({ team, handleClick, setIsDisplayed }) {
   function listClick() {
     handleClick(team);
     setIsDisplayed((prev) => !prev);
-    console.log(team.tid)
   }
 
   return (

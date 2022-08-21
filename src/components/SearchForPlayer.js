@@ -53,6 +53,7 @@ function SearchForPlayer({ players, teams }) {
       setName(words)
     }
 
+    console.log(playerStat)
 
   return (
     <>
