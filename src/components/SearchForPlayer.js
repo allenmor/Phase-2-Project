@@ -6,7 +6,7 @@ import SearchForPlayerCard from "./SearchForPlayerCard";
 function SearchForPlayer({ players, teams }) {
   const [playerStat, setPlayerStat] = useState([]);
   const [name, setName] = useState("");
-  const[nameImg, setNameImg] =  useState({name: '', image: ''})
+  const[nameImg, setNameImg] =  useState({name: '', image: 'https://1000logos.net/wp-content/uploads/2017/04/Logo-NBA.png'})
 
 
 
@@ -16,7 +16,27 @@ function SearchForPlayer({ players, teams }) {
     let newArray = players.filter((el, i) => {
         return el.name
     })
-    let searchedPlayer = newArray.filter((el, i) => {
+    let onlyNbaPlayers = newArray.filter((player, i) => {
+        return player.stats
+    })
+
+    //Add TEAM NAME TO EACH PLAYER STAT
+    // let addTeamName = onlyNbaPlayers.map((player, i) => {
+    //     return player.stats.map((stat, i) => {
+    //         return stat.tid == teams.map((el, i) => {
+    //             return el.tid 
+    //         })  
+    //     }) ? {...player, stats: {
+    //         ...player.stats, 0: {
+    //             ...player.stats[0], teamName: 'yo'
+    //         }
+    //     }
+    //     }  : 'no'
+    // })
+    console.log(onlyNbaPlayers)
+    console.log(teams)
+
+    let searchedPlayer = onlyNbaPlayers.filter((el, i) => {
         return el.name.toLowerCase() == name
     })
 
@@ -67,7 +87,7 @@ function SearchForPlayer({ players, teams }) {
         </thead>
         <tbody>
           {playerStat.map((el, i) => {
-              return <SearchForPlayerCard teams = {teams} key={i} stat={el} />
+              return <SearchForPlayerCard key={i} stat={el} />
           })}
         </tbody>
       </table>

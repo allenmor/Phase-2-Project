@@ -5,7 +5,6 @@ import './Stadiums.css'
 function Stadiums({stadiums}) {
     //MAP THROUGH ALL STADIUMS
 
-    console.log(stadiums)
   return (
     <div className='wrap'>
         {stadiums.map((el, i) => {
