@@ -21,28 +21,28 @@ function SearchForPlayer({ players, teams }) {
     })
 
     //Add TEAM NAME TO EACH PLAYER STAT
-    // let addTeamName = onlyNbaPlayers.map((player, i) => {
-    //     return player.stats.map((stat, i) => {
-    //         return stat.tid == teams.map((el, i) => {
-    //             return el.tid 
-    //         })  
-    //     }) ? {...player, stats: {
-    //         ...player.stats, 0: {
-    //             ...player.stats[0], teamName: 'yo'
-    //         }
-    //     }
-    //     }  : 'no'
-    // })
-    console.log(onlyNbaPlayers)
-    console.log(teams)
-
-    let searchedPlayer = onlyNbaPlayers.filter((el, i) => {
+    let addTeamName = onlyNbaPlayers.map((player, i) => {
+        return player.stats.map((stat, i) => {
+            return stat.tid == teams.map((el, i) => {
+                return el.tid 
+            })  
+        }) ? {...player, stats: {
+            ...player.stats.map(object => {
+                return {...object, teamName: teams.filter((el, i) => {
+                    return el.tid == object.tid 
+                })}
+            })
+        }
+        }  : 'no'
+    })
+    let searchedPlayer = addTeamName.filter((el, i) => {
         return el.name.toLowerCase() == name
     })
 
+
     setNameImg({...nameImg, name: searchedPlayer[0].name, image: searchedPlayer[0].imgURL})
-    console.log(nameImg)
-    setPlayerStat(searchedPlayer[0].stats)
+
+    setPlayerStat(Object.entries(searchedPlayer[0].stats).map((e) => ( { [e[0]]: e[1] } )))
   }
 
 
@@ -52,7 +52,6 @@ function SearchForPlayer({ players, teams }) {
 
       setName(words)
     }
-
 
 
   return (
@@ -87,7 +86,7 @@ function SearchForPlayer({ players, teams }) {
         </thead>
         <tbody>
           {playerStat.map((el, i) => {
-              return <SearchForPlayerCard key={i} stat={el} />
+              return <SearchForPlayerCard key={i} stat={el[i]} />
           })}
         </tbody>
       </table>

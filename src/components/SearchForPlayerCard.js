@@ -6,7 +6,7 @@ function SearchForPlayerCard({ stat }) {
   return <>
         <tr>
         <td data-label="season">{stat.season}{stat.playoffs == true ? ' PlayOffs' : ''}</td>
-        <td data-label="season">{stat.tid}</td>
+        <td data-label="season">{stat.teamName[0].region} {stat.teamName[0].name}</td>
         <td data-label="season">{stat.gp}</td>
         <td data-label="points">{(stat.pts / stat.gp).toFixed(1)}</td>
         <td data-label="rebounds">{((stat.orb + stat.drb) / stat.gp).toFixed(1)}</td>
