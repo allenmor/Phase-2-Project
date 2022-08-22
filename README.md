@@ -1,4 +1,6 @@
 README
+GITHUB LINK - https://github.com/allenmor/Phase-2-Project
+
 Website Description
 1. First Route - Home Page
 This page contains the FrontPage component. Which displays both conferences and all the teams and players in them. Our app is a information Website for NBA fans. You can look at all the teams they are divided by the two conferences.
