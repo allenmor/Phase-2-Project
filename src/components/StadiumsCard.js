@@ -9,7 +9,6 @@ function StadiumsCard({stadium}) {
     function handleClick() {
         setClicked(prev => !prev)
     }
-    console.log(stadium)
   return (
     <div className="box">
      <div className="boxInner">
