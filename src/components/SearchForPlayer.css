@@ -226,7 +226,7 @@ body {
 		color: #0d0d0d;
 	}
 	body {
-		background: #eceaea;
+		background: rgb(238, 229, 238);
 	}
 	.search-bar input {
 		box-shadow: 0 0 0 0.4em #121212 inset;

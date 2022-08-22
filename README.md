@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# NBA REPORT 
+
+github repo :
+
+We are using a Get and a Post request.
+We are using .... React Routes // and what they will be used for
+
+What three (or more) React Router routes you will be using and what they will be used for
+A component diagram specifying the following per component (if any):
+The purpose of the component
+Any state or state lifting
+Any events
+Props
+An outline of your db.json file including dummy data
+Three stretch goals
+A Kanban board of how you will be dividing tasks and when they will be done
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

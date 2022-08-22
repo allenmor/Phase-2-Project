@@ -1,5 +1,5 @@
 import React from 'react'
-import './Stadiums.css'
+import './Stadiums.scss'
 import { useState } from 'react'
 
 function StadiumsCard({stadium}) {
