@@ -117,7 +117,7 @@ function Stadiums() {
                 </div>
               </div>
             </div>
-            <input className="button pulse" Submit type="submit" value="Submit" />
+            <input className="button pulse" type="submit" value="Submit" />
           </form>
         </div>
       </div>

@@ -21,7 +21,6 @@ function NavBar() {
   
   <div className="nav-links">
     <Link to='/'>Home</Link>
-    <Link to='/Teams'>Teams</Link>
     <Link to='/stadiums'>Stadiums</Link>
     <Link to='/searchforplayer'>Search For Player</Link>
   </div>
