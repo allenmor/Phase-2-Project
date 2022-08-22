@@ -40,6 +40,7 @@ function SearchForPlayer({ players, teams }) {
     })
 
 
+    console.log(addTeamName)
     setNameImg({...nameImg, name: searchedPlayer[0].name, image: searchedPlayer[0].imgURL})
 
     setPlayerStat(Object.entries(searchedPlayer[0].stats).map((e) => ( { [e[0]]: e[1] } )))
@@ -53,10 +54,10 @@ function SearchForPlayer({ players, teams }) {
       setName(words)
     }
 
-    console.log(playerStat)
 
   return (
     <>
+    
       <form onSubmit={handleSubmit} className="search-bar">
         <input
           onChange={handleChange}

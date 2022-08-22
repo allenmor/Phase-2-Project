@@ -45,7 +45,7 @@ function EasternContainer({ teams, season, players }) {
               <th scope="col">Pic</th>
               <th scope="col">Name</th>
               <th scope="col">Position</th>
-              <th scope="col">Born</th>
+              <th scope="col">Weight</th>
             </tr>
           )}
         </thead>

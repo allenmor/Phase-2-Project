@@ -34,7 +34,7 @@ function WesternContainer({ teams, players, season }) {
               <th scope="col">Pic</th>
               <th scope="col">Name</th>
               <th scope="col">Position</th>
-              <th scope="col">Born</th>
+              <th scope="col">Weight</th>
             </tr>
           )}
         </thead>

@@ -24,7 +24,7 @@ function PlayerPictures({ playerPic, setIsDisplayed, isDisplayed }) {
             <h3>{playerPic.pos}</h3>
           </td>
           <td data-label="abbrev">
-            <h3>{playerPic.born.loc}</h3>
+            <h3>{playerPic.weight} lbs</h3>
           </td>
         </tr>
       )}

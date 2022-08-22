@@ -5,12 +5,12 @@ import Stadiums from "./components/Stadiums";
 import { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
 import SearchForPlayer from "./components/SearchForPlayer";
+import AddAPlayer from "./components/AddAPlayer";
 
 function App() {
   const [players, setPlayers] = useState([]);
   const [season, setSeason] = useState([]);
   const [teams, setTeams] = useState([]);
-  const[stadiums, setStadiums] = useState([])
 
   useEffect(() => {
     fetch("http://localhost:3000/data")
@@ -19,9 +19,11 @@ function App() {
         setPlayers(data[0].players);
         setSeason(data[0]);
         setTeams(data[0].teams);
-        setStadiums(data[0].stadiums)
+
+        console.log(data)
       });
   }, []);
+  
   return (
     <>
     <NavBar />
@@ -34,7 +36,9 @@ function App() {
         path="/"
         element={<FrontPage players={players} season={season} teams={teams} />}
       />
-      <Route path="/stadiums" element={<Stadiums stadiums={stadiums} />} 
+      <Route path="/stadiums" element={<Stadiums />} 
+      />
+      <Route path="/addaplayer" element={<AddAPlayer />} 
       />
     </Routes>
     </>

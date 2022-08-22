@@ -23,6 +23,7 @@ function NavBar() {
     <Link to='/'>Home</Link>
     <Link to='/stadiums'>Stadiums</Link>
     <Link to='/searchforplayer'>Search For Player</Link>
+    <Link to='/addaplayer'>Add A Player</Link>
   </div>
 </div>
   )

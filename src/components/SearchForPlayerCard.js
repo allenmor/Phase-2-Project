@@ -3,6 +3,7 @@ import { useState } from "react";
 
 function SearchForPlayerCard({ stat }) {
 
+    console.log(stat)
   return <>
         <tr>
         <td data-label="season">{stat.season}{stat.playoffs == true ? ' PlayOffs' : ''}</td>
