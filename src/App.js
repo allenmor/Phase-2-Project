@@ -13,7 +13,7 @@ function App() {
   const[stadiums, setStadiums] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3000/data")
+    fetch("http://localhost:3001/data")
       .then((res) => res.json())
       .then((data) => {
         setPlayers(data[0].players);
