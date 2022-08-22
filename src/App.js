@@ -5,6 +5,7 @@ import Stadiums from "./components/Stadiums";
 import { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
 import SearchForPlayer from "./components/SearchForPlayer";
+import Teams from "./components/teams";
 
 function App() {
   const [players, setPlayers] = useState([]);
@@ -12,7 +13,7 @@ function App() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/data")
+    fetch("http://localhost:3001/data")
       .then((res) => res.json())
       .then((data) => {
         setPlayers(data[0].players);
