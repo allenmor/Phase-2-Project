@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 README
 GITHUB LINK - https://github.com/allenmor/Phase-2-Project
 =======

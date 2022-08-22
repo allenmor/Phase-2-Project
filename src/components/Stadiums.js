@@ -10,7 +10,7 @@ function Stadiums() {
   //MAP THROUGH ALL STADIUMS
   // fetch all stadiums
   useEffect(() => {
-    fetch("http://localhost:3000/stadiums")
+    fetch("http://localhost:3001/stadiums")
       .then((res) => res.json())
       .then((data) => {
         setStadiums(data);
@@ -25,8 +25,9 @@ function Stadiums() {
 
   function handleSubmit(e) {
     e.preventDefault()
+    console.log(e.target.value)
     console.log(newObj)
-    fetch('http://localhost:3000/stadiums', {
+    fetch('http://localhost:3001/stadiums', {
       method:'POST',
       headers: {
         'Content-Type' : 'application/json'
