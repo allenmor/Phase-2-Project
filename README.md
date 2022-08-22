@@ -4,6 +4,8 @@ GITHUB LINK - https://github.com/allenmor/Phase-2-Project
 =======
 # NBA REPORT 
 
+npx json-server --watch db.json --port 3001
+
 github repo :
 
 We are using a Get and a Post request.
