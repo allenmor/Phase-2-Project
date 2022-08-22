@@ -1,6 +1,6 @@
 import React from "react";
 import StadiumsCard from "./StadiumsCard";
-import "./Stadiums.css";
+import "./Stadiums.scss";
 import { useState, useEffect } from "react";
 
 function Stadiums() {
@@ -49,13 +49,13 @@ function Stadiums() {
           <form onSubmit={handleSubmit}>
             <div className="row clearfix">
               <div className="col_half">
-                <label>Team</label>
-                <div className="input_field">
+                <label >Team</label>
+                <div className="search-container">
                   {" "}
                   <span>
                     <i aria-hidden="true" className="fa fa-user"></i>
                   </span>
-                  <input
+                  <input className="search-box" action="//llamaswill.tumblr.com/search"
                     onChange={handleChange}
                     value={newObj.team}
                     type="text"
@@ -65,14 +65,14 @@ function Stadiums() {
                   />
                 </div>
               </div>
-              <div className="col_half">
+               <div className="row clearfix">
                 <label>Image Inside</label>
-                <div className="input_field">
+                <div className="search-container" >
                   {" "}
                   <span>
-                    <i aria-hidden="true" className="fa fa-user"></i>
+                    <i aria-hidden="true" className="fa fa-users"></i>
                   </span>
-                  <input
+                  <input className="search-box" action="//llamaswill.tumblr.com/search" 
                     value={newObj.imageIn}
                     onChange={handleChange}
                     type="text"
@@ -80,17 +80,17 @@ function Stadiums() {
                     placeholder="Enter Inside Picture"
                   />
                 </div>
-              </div>
+              </div> 
             </div>
             <div className="row clearfix">
               <div className="col_half">
                 <label>Image Outside</label>
-                <div className="input_field">
+                <div className="search-container">
                   {" "}
                   <span>
                     <i aria-hidden="true" className="fa fa-envelope"></i>
                   </span>
-                  <input
+                  <input className="search-box" action="//llamaswill.tumblr.com/search"
                     onChange={handleChange}
                     value={newObj.imageOut}
                     type="text"
@@ -100,14 +100,14 @@ function Stadiums() {
                   />
                 </div>
               </div>
-              <div className="col_half">
+              <div className="row clearfix">
                 <label>Name Of Stadium</label>
-                <div className="input_field">
+                <div className="search-container">
                   {" "}
                   <span>
                     <i aria-hidden="true" className="fa fa-phone"></i>
                   </span>
-                  <input
+                  <input className='search-box' action="//llamaswill.tumblr.com/search"
                     value={newObj.name}
                     onChange={handleChange}
                     type="text"
@@ -117,7 +117,7 @@ function Stadiums() {
                 </div>
               </div>
             </div>
-            <input className="button" type="submit" value="Sumbit" />
+            <input className="button pulse" Submit type="submit" value="Submit" />
           </form>
         </div>
       </div>
