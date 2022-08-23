@@ -4,9 +4,10 @@ GITHUB LINK - https://github.com/allenmor/Phase-2-Project
 # NBA REPORT 
 
 github repo :
+Our CRUD Routes are
+Get: To get the information from the db.json
+Post request: To Post the new stadium that the user would like to Post
 
-We are using a Get and a Post request.
-We are using .... React Routes // and what they will be used for
 
 What three (or more) React Router routes you will be using and what they will be used for
 A component diagram specifying the following per component (if any):
@@ -18,9 +19,13 @@ An outline of your db.json file including dummy data
 Three stretch goals
 A Kanban board of how you will be dividing tasks and when they will be done
 
->>>>>>> new-branch
+
 
 Website Description
+NBA REPORT is a website app that shows all the teams in the Eastern and Western Conference.
+It shows all the stadiums. Also a user may input any player they like and get all the players stats for their entire career.
+
+We are using .... React Routes // and what they will be used for
 1. First Route - Home Page
 This page contains the FrontPage component. Which displays both conferences and all the teams and players in them. Our app is a information Website for NBA fans. You can look at all the teams they are divided by the two conferences.
 2. Second Route - Stadiums Page
@@ -34,12 +39,8 @@ the beginning to end of their career you will get a table with every season INCL
 how many games they played the amount of points rebounds and assists they averaged for that whole season and also thei Field Goal percentage.
 4. The NavBar component lets us navigate through all the pages it is using react router to route to which ever page the user pleases
 
-Component Diagram
-        App.js
-       / |  |  \
-      /  |  |   \                EasternConference
-     /   |   \    \              /
-  NavBar |     \    \           /
-  SeachForPlayer\     \FrontPage\
-                 \               \
-                Stadiums       Western Conference
+
+
+<img src='Untitled.png' alt='pic'/>
+
+
