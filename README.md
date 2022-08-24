@@ -43,4 +43,24 @@ how many games they played the amount of points rebounds and assists they averag
 
 <img src='Untitled.png' alt='pic'/>
 
+WIREFRAME
+
+FIRST PAGE
+
+
+<img src='frontPage.png' alt='pic'/>
+
+
+
+SECOND PAGE
+
+<img src='stadium.png' alt='pic'/>
+
+
+THIRD PAGE
+
+<img src='playerstats.png' alt='pic'/>
+
+
+
 
