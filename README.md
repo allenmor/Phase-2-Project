@@ -3,6 +3,8 @@ GITHUB LINK - https://github.com/allenmor/Phase-2-Project
 =======
 # NBA REPORT 
 
+npx json-server --watch db.json --port 3001
+
 github repo :
 Our CRUD Routes are
 Get: To get the information from the db.json
